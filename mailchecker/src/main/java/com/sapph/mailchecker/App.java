@@ -3,7 +3,6 @@ package com.sapph.mailchecker;
 import java.awt.*;
 import java.util.Calendar;
 
-import javafx.scene.input.KeyCode;
 import org.jnativehook.GlobalScreen;
 import org.jnativehook.NativeHookException;
 import org.jnativehook.keyboard.NativeKeyEvent;
@@ -36,7 +35,7 @@ public class App
             }
 
             public void nativeKeyPressed(NativeKeyEvent nativeKeyEvent) {
-                if(nativeKeyEvent.getKeyCode()==16){
+                if(nativeKeyEvent.getKeyCode()== NativeKeyEvent.VC_Q){
                     System.exit(0);
 
                 }
